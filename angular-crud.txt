@@ -1,0 +1,6 @@
+ng g component tasks/task-list
+ng g component tasks/task-list-item
+ng g component tasks/task-form
+ng g service tasks/shared/task
+ng g class tasks/shared/task
+
