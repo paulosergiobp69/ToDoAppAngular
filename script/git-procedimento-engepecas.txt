@@ -1,0 +1,26 @@
+git  Engepecas
+
+[root@desenvolvimento hardness2]# git config --global user.name "paulo.bernardo"
+[root@desenvolvimento hardness2]# git config --global user.email "sistema1@engepecas.com.br"
+[root@desenvolvimento hardness2]# git config user.name
+
+
+[root@desenvolvimento hardness2]# git config --global core.editor vi
+
+41988169968  -- rose
+
+41-35011899
+
+
+
+994702
+
+994702	
+
+
+$mMenuRegistros[]="MOVIMENTO(S) O.C. X NOTAS(API),,../empresas/E003/externos/T012_saldo_api_oc.php3,,3";
+
+
+    echo "<script>";
+    echo " window.close();";
+    echo "</script>";	

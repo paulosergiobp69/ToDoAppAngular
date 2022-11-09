@@ -1,0 +1,16 @@
+SELECT T011.T011_Id,
+		T012.T012_Id,
+		T012_D009_Id,
+		T011_C007_Id,
+		T011_C004_Id,
+		T012_Quantidade,
+		0 AS Quantidade_Pac,
+		T012_Quantidade AS Saldo,
+		T012_Valor_Custo_Unitario,
+		'N' AS Status,
+		T011.T011_Data_Emissao
+FROM T011
+INNER JOIN T012 ON T012.T012_T011_Id = T011.T011_Id
+where 1=1
+and   T012.T012_T011_Id = 1120722
+AND   T012.T012_D009_Id = 4848130

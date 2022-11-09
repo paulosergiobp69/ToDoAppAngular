@@ -1,0 +1,26 @@
+----> laravel engepeças
+
+
+relacionamento 1 -> 1
+
+cliente -> documento
+
+cliente -> $this->hasOne
+
+
+Jwt:
+cria usuarios: 
+C:\laragon\www\api-integracao>php artisan make:seeder UsersTableSeeder
+
+C:\laragon\www\api-integracao>php artisan migrate:refresh --seed  
+
+C:\laragon\www\api-integracao>composer require tymon/jwt-auth "1.0.*"
+
+C:\laragon\www\api-integracao>php artisan vendor:publish --provider="Tymon\JWTAuth\Providers\LaravelServiceProvider"
+
+C:\laragon\www\api-integracao>php artisan jwt:secret
+
+C:\laragon\www\api-integracao>php artisan make:controller Auth\AuthenticateController
+
+
+

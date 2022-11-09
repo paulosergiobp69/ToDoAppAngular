@@ -1,0 +1,19 @@
+// consulta das notas fiscais eletronicas de produtos
+// as notas rejeitadas tem o campo IND_STATUS_NFE diferente de 6 
+
+SELECT
+  *
+FROM Nfe.INTERF_NFE
+WHERE 1 = 1
+AND NUM_DOCTO_FISCAL = '2356'
+AND NUM_SERIE_DOCTO_FISCAL = '102'
+
+
+// consultar os impostos de ICMS E ST dos itens, eu pego o NUM_SEQ_NFE da consulta anterior
+
+ SELECT * FROM INTERF_ICMS_NFE WHERE NUM_SEQ_ITEM_NFE IN 
+( SELECT NUM_SEQ_ITEM_NFE FROM INTERF_ITEM_NFE WHERE NUM_SEQ_NFE = 9482602 )
+
+
+// outros parametros de itens que nao sejam impostos
+SELECT  * FROM INTERF_ITEM_NFE WHERE NUM_SEQ_NFE = 9337042

@@ -1,0 +1,52 @@
+Procedimento de Desenvolvimento API - Engepecas
+
+caso seja necessario reiniciar tabelas utilizar para carregar usuario:
+
+C:\code\api-integracao>php artisan db:seed
+
+
+
+API:
+
+1. C:\code\api-integracao>php artisan make:migration create_nome_tabel_table --create=tabela_desejada
+						  php artisan make:migration create_operation_type_table --create=operation_types
+
+ou
+   C:\code\api-integracao>php artisan make:model MODELS\cor -m
+   
+	<trata informações migration>
+	
+	<gera migration>
+	php artisan  migrate (todos)
+
+	php artisan migrate --path="database/migrations/2020_11_04_111650_create_operation_type_table.php"   (uma tabela)
+	
+   
+2. C:\code\api-integracao>php artisan infyom:api Fornecedor --fromTable --tableName=fornecedor --primary=id 
+
+3. MODEL:
+
+        a) $fillable --> Remove created_at ... 
+        b) $cast --> deixa
+        e) $rules ---> copia para usar no Create????APIRequest.php e UpdateApi
+		
+		
+		
+4:Altera HTTP -> Request -> API -> Create????APIRequest.php
+		adiciona Rules e trata a informação.
+
+5: Altera HTTP -> Request -> API -> Update????APIRequest.php
+		adiciona Rules e trata a informação.
+
+6: Controller:
+
+	adiciona em todos as chamadas de metrodo da classe, ma posição indicada abaixo:
+     *      path="/fornecedors",
+     *      summary="Get a listing of the Fornecedors.",
+--->     *      security={{ "EngepecasAuth": {} }},  
+     *      tags={"Fornecedor"},
+     *      description="Get all Fornecedors",
+     *      produces={"application/json"},
+		 
+		 
+	

@@ -1,0 +1,33 @@
+ select pho.id as pho_id,
+                        pho.HRD_T011_Id,
+                        T013.T013_C004_Id,
+                        T013_Id,
+                        T013.T013_Data_Entrada,
+                        T013.T013_Data_Emissao,
+                        T013.T013_Numero_Nota_Fiscal,
+                        T013.T013_Numero_Serie_Nota_Fiscal,
+                        T014.T014_Id, 
+                        T014.T014_T012_Id, 
+                        T014.T014_D009_Id, 
+                        T014.T014_Codigo_Produto, 
+                        T014.T014_Descricao_Produto,
+                        T014.T014_Quantidade,
+                        T014.T014_Valor_Custo_Unitario,
+                        T013.T013_Flag_Cancelada,
+                        pho.HRD_Status,
+             		T012_Quantidade_Pendente_Laradb(T014_T012_Id) as saldo_pendente,
+                        pho.HRD_Quantidade_Pac 
+         from  T013 
+         inner join T014 on T014.T014_T013_Id =  T013_Id 
+         inner join engdb.purchase_hist_orders pho on pho.HRD_T012_Id = T014.T014_T012_Id 
+         where 1=1
+         and   T013.T013_Data_Entrada >= '2022-05-01 00:00:00'
+         and   T013.T013_Flag_Cancelada = 'N'
+         -- and   T014_Id in (10849562,10849552)
+         and   T013.T013_C008_Id = 1
+         and   pho.HRD_Status = 'N'
+         and  pho.HRD_Saldo > 0
+         and    T013.T013_Numero_Controle > 0
+         and  T012_Quantidade_Pendente_Laradb(T014_T012_Id) > 0
+         and   T014.T014_Id not in (select phii.HRD_T014_Id from engdb.purchase_hist_incoming_invoices phii)
+         order by T013.T013_C004_Id,T013_Id

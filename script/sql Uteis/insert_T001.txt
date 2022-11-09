@@ -1,0 +1,121 @@
+ insert into T001 ( 
+ T001_D024_Id, 
+ T001_T014_Id, 
+ T001_T013_Id, 
+ T001_D009_Id, 
+ T001_C004_Id, 
+ T001_D006_Id, 
+ T001_D006_Id_Cabecalho, 
+ T001_T066_Id, 
+ T001_Codigo_Produto, 
+ T001_Data_Lancamento, 
+ T001_Descricao_Operacao, 
+ T001_Quantidade, 
+ T001_Flag_Operacao, 
+ T001_Valor_Preco_Unitario, 
+ T001_Valor_Custo_Unitario, 
+ T001_Valor_Custo_Com_ICMS_Unitario, 			
+ T001_Valor_Custo_Com_ST_Unitario, 
+ T001_Valor_Compra_Substituicao_Tributaria_Unitario, 
+ T001_Valor_ICMS_Compra_Unitario, 
+ T001_Flag_Atualiza_Custo, 
+ T001_Quantidade_Saldo, 
+ T001_Demonstrativo_Custo, 
+ T001_Flag_Devolucao, 
+ T001_CST_Origem, 
+ T001_Media_Base_Valor_ICMS_ST_Retido_Anteriormente,
+ T001_Media_Valor_ICMS_ST_Retido_Anteriormente,
+ T001_Valor_COFINS_Compra_Unitario,
+ T001_Valor_PIS_Compra_Unitario,
+ T001_T072_Id,
+ T001_T007_Id,
+ T001_T008_Id,
+ T001_T054_Id,
+ T001_T055_Id,
+ T001_D024_Id_Cliente,
+ T001_D001_Id,
+ T001_T048_Id,
+ T001_T029_Id,
+ T001_T030_Id,
+ T001_Observacao,
+ T001_Codigo_Fornecedor,
+ T001_Codigo_Cliente
+ ) 
+select T013_D024_Id, T014_Id, T013_Id, T014_D009_Id, T014_C004_Id, T014_D006_Id, T014_D006_Id, 27740172 as T066_Id,
+		T014_Codigo_Produto,  current_date(),  concat('NF-',T013_Numero_Nota_Fiscal) , T014_Quantidade, 
+		'E' as D006_Flag_Estoque, T014_Valor_Custo_Final_Unitario, T014_Valor_Custo_Final_Unitario,  
+	   T014_Valor_Custo_Final_Com_ICMS_Unitario, T014_Valor_Custo_Final_Com_ST_Unitario, 
+	   T014_Valor_ICMS_Substituicao_Unitario, (T014_Valor_ICMS / T014_Quantidade) as Valor_ICMS_Unitario,
+	   D006_Flag_Atualiza_Custo, 0, 'Demonstrativo_Custo' , D006_Flag_Devolucao, 
+	   FN_CST_ORIGEM(T014_ICMS_ORIG_original) as 'T001_CST_Origem' ,T014_Valor_Base_ICMS_Substituicao_Unitario,
+	   T014_Valor_ICMS_Substituicao_Unitario, T014_Valor_COFINS, T014_Valor_PIS,0,0,0,0,0,0,0,
+	   0, 0, 0,0,0, 0 
+ from T014 
+ INNER JOIN T013 ON T013_Id = T014_T013_Id
+ INNER JOIN C004 ON C004_Id = T013_C004_Id  
+ INNER JOIN D005 on D005_Classificacao_Fiscal = T014_Classificacao_Fiscal AND D005.D005_TIPI_EX = T014.T014_TIPI_EX 
+--  INNER JOIN D005 on D005_Id = D009_D005_Id(T014_D009_Id)
+ left join D006 on D006_Id=T014_D006_Id 
+ left join D009 on D009_Id=T014_D009_Id 
+ left join D049 on D049_Id=D009_D049_Id 
+ left join D001 on D001_Id=D049_D001_Id 
+ where T014_T013_Id='2180572' 
+  and T014_C004_Id='4' 
+--  and T014_D009_Id='26976292'
+  and T014_Quantidade>0   
+
+  SELECT T001.T001_T072_Id , T001_CST_Origem
+  from T001 
+  
+ insert into T001 ( 
+ T001_D024_Id, 
+ T001_T014_Id, 
+ T001_T013_Id, 
+ T001_D009_Id, 
+ T001_C004_Id, 
+ T001_D006_Id, 
+ T001_D006_Id_Cabecalho, 
+ T001_T066_Id, 
+ T001_Codigo_Produto, 
+ T001_Data_Lancamento, 
+ T001_Descricao_Operacao, 
+ T001_Quantidade, 
+ T001_Flag_Operacao, 
+ T001_Valor_Preco_Unitario, 
+ T001_Valor_Custo_Unitario, 
+ T001_Valor_Custo_Com_ICMS_Unitario, 			
+ T001_Valor_Custo_Com_ST_Unitario, 
+ T001_Valor_Compra_Substituicao_Tributaria_Unitario, 
+ T001_Valor_ICMS_Compra_Unitario, 
+ T001_Flag_Atualiza_Custo, 
+ T001_Quantidade_Saldo, 
+ T001_Demonstrativo_Custo, 
+ T001_Flag_Devolucao, 
+ T001_CST_Origem, 
+ T001_Media_Base_Valor_ICMS_ST_Retido_Anteriormente,
+ T001_Media_Valor_ICMS_ST_Retido_Anteriormente,
+ T001_Valor_COFINS_Compra_Unitario,
+ T001_Valor_PIS_Compra_Unitario,
+ T001_T072_Id,
+ T001_T007_Id,
+ T001_T008_Id,
+ T001_T054_Id,
+ T001_T055_Id,
+ T001_D024_Id_Cliente,
+ T001_D001_Id,
+ T001_T048_Id,
+ T001_T029_Id,
+ T001_T030_Id,
+ T001_Observacao,
+ T001_Codigo_Fornecedor,
+ T001_Codigo_Cliente
+ ) values ('435402','10483482','2180572','
+','4','109','109','27740322','MC9255','2022-05-19','NF-183','2','E',
+27.5,27.5,27.5,27.5,0,0,'N',NULL,'Demonstrativo_Custo','N','',0,0,
+0,0,0,0,0,0,0,0,0,0,0,0,0,0,0)
+
+  
+  
+ 
+ -- 27740322
+select T066_Id from T066 where T066_D048_Id='1' and T066_D009_Id='26976322'

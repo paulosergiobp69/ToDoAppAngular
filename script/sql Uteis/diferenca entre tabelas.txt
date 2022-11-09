@@ -1,0 +1,107 @@
+SELECT * 
+FROM INFORMATION_SCHEMA.COLUMNS 
+WHERE 1=1
+AND   table_name = 'C004'
+AND   TABLE_SCHEMA = 'E002'
+and   COLUMN_NAME  not in (SELECT COLUMN_NAME
+							FROM INFORMATION_SCHEMA.COLUMNS 
+							WHERE 1=1
+							AND   table_name = 'C004'
+							AND   TABLE_SCHEMA = 'E003')	
+
+-- campos existente na C004 - E002							
+SELECT count(*) 
+		FROM INFORMATION_SCHEMA.COLUMNS 
+		WHERE 1=1
+		AND   table_name = 'C004'
+		AND   TABLE_SCHEMA = 'E002'
+		
+		
+		
+-- colunas com mesmo nome existente na C004 - E002- E003						
+select 	E002_C004.column_name as E002_C004_Column_Name,
+		E003_C004.column_name as E003_C004_Column_Name
+from (SELECT * 
+		FROM INFORMATION_SCHEMA.COLUMNS 
+		WHERE 1=1
+		AND   table_name = 'C004'
+		AND   TABLE_SCHEMA = 'E002') as E002_C004
+inner join (SELECT * 
+		FROM INFORMATION_SCHEMA.COLUMNS 
+		WHERE 1=1
+		AND   table_name = 'C004'
+		AND   TABLE_SCHEMA = 'E003') as E003_C004
+		on E003_C004.column_name = E002_C004.column_name
+where 1=1
+
+-- colunas que existe apenas na E002 						
+select 	E003_C004.column_name as E003_C004_Column_Name,
+		E002_C004.column_name as E002_C004_Column_Name
+from (SELECT * 
+		FROM INFORMATION_SCHEMA.COLUMNS 
+		WHERE 1=1
+		AND   table_name = 'C004'
+		AND   TABLE_SCHEMA = 'E003') as E003_C004
+left join (SELECT * 
+		FROM INFORMATION_SCHEMA.COLUMNS 
+		WHERE 1=1
+		AND   table_name = 'C004'
+		AND   TABLE_SCHEMA = 'E002') as E002_C004
+		on E002_C004.column_name = E003_C004.column_name
+where 1=1
+
+
+-- colunas que existes com diferenca de type						
+select 	E003_C004.column_name as E003_C004_Column_Name,
+		E002_C004.column_name as E002_C004_Column_Name
+from (SELECT * 
+		FROM INFORMATION_SCHEMA.COLUMNS 
+		WHERE 1=1
+		AND   table_name = 'C004'
+		AND   TABLE_SCHEMA = 'E003') as E003_C004
+left join (SELECT * 
+		FROM INFORMATION_SCHEMA.COLUMNS 
+		WHERE 1=1
+		AND   table_name = 'C004'
+		AND   TABLE_SCHEMA = 'E002') as E002_C004
+		on E002_C004.column_name = E003_C004.column_name
+where 1=1
+and   E002_C004.data_type != E003_C004.data_type
+
+-- colunas que existes com diferenca de tamanho						
+select 	E003_C004.column_name as E003_C004_Column_Name,
+		E002_C004.column_name as E002_C004_Column_Name,
+		E002_C004.column_type as E002_C004_Column_Type, 
+		E003_C004.column_type as E003_C004_Column_Type
+from (SELECT * 
+		FROM INFORMATION_SCHEMA.COLUMNS 
+		WHERE 1=1
+		AND   table_name = 'C004'
+		AND   TABLE_SCHEMA = 'E003') as E003_C004
+left join (SELECT * 
+		FROM INFORMATION_SCHEMA.COLUMNS 
+		WHERE 1=1
+		AND   table_name = 'C004'
+		AND   TABLE_SCHEMA = 'E002') as E002_C004
+		on E002_C004.column_name = E003_C004.column_name
+where 1=1
+and   E002_C004.column_type != E003_C004.column_type
+
+-- colunas que existes com diferenca de comentarios						
+select 	E003_C004.column_name as E003_C004_Column_Name,
+		E002_C004.column_name as E002_C004_Column_Name,
+		E002_C004.column_comment as E002_C004_Column_Comment, 
+		E003_C004.column_comment as E003_C004_Column_Comment
+from (SELECT * 
+		FROM INFORMATION_SCHEMA.COLUMNS 
+		WHERE 1=1
+		AND   table_name = 'C004'
+		AND   TABLE_SCHEMA = 'E003') as E003_C004
+left join (SELECT * 
+		FROM INFORMATION_SCHEMA.COLUMNS 
+		WHERE 1=1
+		AND   table_name = 'C004'
+		AND   TABLE_SCHEMA = 'E002') as E002_C004
+		on E002_C004.column_name = E003_C004.column_name
+where 1=1
+and   E002_C004.column_comment != E003_C004.column_comment

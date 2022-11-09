@@ -1,0 +1,713 @@
+########################################################################
+# adiconar JWT
+########################################################################
+
+composer require tymon/jwt-auth
+
+
+https://www.infyom.com/open-source/laravelgenerator/docs/7.0/installation
+
+
+find /home/marcos/teste ! -mtime -7 | xargs rm -rf
+
+find /srv/www/paulo/hardness/api/*.txt  -mtime +10 -exec rm -rf {} \;
+
+# conta arquivos
+find . -type f -mtime +300 | wc -l
+
+find . -name 'log_*.txt' | wc -l
+
+
+find . -type f -mtime +30 -delete
+
+
+Nagios ou Zabbix
+
+
+######################################
+#   GIT
+######################################
+
+# Para saber os arquivos da branch que ainda não estão na master, você pode utilizar este comando:
+
+git diff --name-only master
+
+# Obter lista de arquivos alterados no diretório de trabalho (working directory)
+git ls-files --modified
+ 
+ OU
+ 
+git ls-files -m
+
+
+########################
+
+senha vnc: 4rfv%TGB
+
+########################
+
+
+
+ramal arno - 8809
+
+conectar tv: ctrl + k
+
+
+&nbsp; é o espaço em html.
+
+&ensp; dá dois espaços.
+
+&emsp; dá quatro espaços.
+
+10723652
+--old
+paulosergiobp@gmail.com
+$2y$10$OEGVjsTm0sjebh/KHby6PekX.YJ4HX6Hnv418nSauiDrRCZiN9sIq
+
+-- new
+egp@engepecas.com.br
+$2y$10$UyNVYZfBHgfl2B.bX8KCAeB8NoSFDT1UXs.WoRgOaY2hup5494HYW
+
+
+
+-- remover pasta linux
+rm -rf Dir1
+
+-- buscar arquivos alterados nas ultimas 24 horas
+ find . -mtime -1
+
+
+-- buscar arquivos por data
+ls -lt | grep "Abr 26" > arq
+
+##listar por data
+ ls -la | grep 20220705
+
+
+find ./* -type f -exec grep "1237292" {} \;
+
+
+-- mostra nome 
+find ./* -type f -exec grep -H -i "1237292" {} \;
+
+
+mensagem de erros 
+
+//             console.log(error.response.status);
+//             console.log(error.response.statusText);
+//             console.log(error.message);
+//             console.log(error.response.headers); 
+//                console.log(error.response.data.errors); 
+                let err = error.response.data.errors;
+                let arr = Object.values(err);
+            Swal.fire({
+                html: arr[0],
+                icon: "warning",
+            });            
+
+
+****************************************
+
+
+
+mint Debian
+Conexão de Area de Trabalho Remota
+192.168.0.55
+User: suporte
+senha: 4rfv%TGB
+
+
+DESCRIBE  D005;
+
+npm run dev
+
+npm run watch 
+
+            // Busca todos registros inclusive os deletados
+            // $b2bUsers = B2bUsers::withTrashed()->where('login','=',$request->login)->get();
+
+git config --global url."https://".insteadOf git://
+
+JsonResource::withoutWrapping()
+
+http://portal.horusinfo.com.br
+usuario: 5508
+senha:  Enge@1234
+
+-- ingles HP13616384780510
+
+BK933609425BR
+
+-- configuracao laravel
+Listar todos os atalhos do vscode:
+
+programadas
+maiusculas: ctrl + u ctrl + u
+minusculas: ctrl + m ctrl + m
+
+
+## orgenizar identação
+Windows: shift + alt + f
+
+
+Windows/Linux: Ctrl + k Ctrl + s
+
+Mover linhas
+Windows/Linux: Alt + Seta pra cima ou pra baixo para mover linhas.
+
+Copiar linhas
+Windows/Linux: Shift + Alt + Seta pra cima ou pra baixo
+
+Completar código
+Windows/Linux: Ctrl + Space
+
+Comentar linhas
+Windows/Linux: Ctrl + k Ctrl + c
+
+Para saber todos os comandos nativos da ferramenta é Windows/Linux: Ctrl + shift+ p
+
+
+PORTAL DE ESTUDOS: https://www.gavinselitesquad.com/login
+LOGIN: paulosergiobp@gmail.com
+SENHA: sTzXR63F7f 
+
+icones laravel: http://skote-v.laravel.themesbrand.com/icons-boxicons
+icones laravel: http://skote-v.laravel.themesbrand.com/icons-boxicons
+
+correcao entrada de itens phii
+
+nota_recebida/carregar_phii.php
+
+ajusta saldo ordem de compra novo
+
+Z:\hardness\ajusta_saldo_phii_nota_emitida.php
+
+
+INSERE ITEN NA NOTA DE ENTRADA DE TRANSFERENCIA:
+http://192.168.0.239/paulo/hardness5/almoxarifado_recebimento/importa_nfe_transf_cd_varejo_entrada_paulo.php
+
+
+** termos de financeiro e contabil em ingles, bom para criarmos os campos no laradb https://www.sk.com.br/sk-fcj.html
+
+bugs - hardnes banco de dados: 
+
+- 05/11/2021 - 16:00
+
+ajuste nertbeans:
+msg: O diretório de fontes já é um projeto do netbeans (talvez apenas na memória).
+
+1.Vá para a pasta que contém seu projeto
+2.Exclua a pasta chamada nbproject
+3. reinicie o Netbeans
+
+usuario e senha db: laradb 
+servidor: 172.18.18.4
+user=root
+password=xtdLVEJ
+1269602
+linux:
+servidor: 172.18.18.4
+user=root
+password=xtdLVEJ
+
+http://hardness.engepecas.intranet/hardness/monitoramento/dashboard.php
+
+servidor novo desenv:
+
+ip: 172.18.18.3
+host: https://api.prod.engepecas.com.br/
+usr: dev
+pwd: b0ekc4Fhq
+
+../marketing/orcamento/gerar_orcamento_pdf.php?T003_Id=<?php echo $T003_Id; ?>"
+ 	1176842
+usr: root 
+pwd: 4rfv%TGB
+
+Nova senha para dar pull em produção
+-->	 Jgr34eng02@
+
+
+git config --global url."https://".insteadOf git://
+
+DOCUMENTAÇÃO SAGE:
+\\192.168.0.239\www\Documentacao_Sistema
+
+discar ramal
+03386 + ramal + 
+
+email: sistema1@engepecas.com.br
+pwd: @1k09981
+https://outlook.office.com/mail/inbox
+
+
+
+user: paulo
+pwd: qwe123$$$
+
+http://version.engepecas.local/engepecas/laravel-integracao.git
+git: 
+ git clone http://192.168.0.20/engepecas/hardness.git
+ 
+user: sistema1@engepecas.com.br
+pwd: qwe123$$$  
+
+altera senha no site do git e  depois ajusta no windows
+https://cmatskas.com/how-to-update-your-git-credentials-on-windows/
+
+
+
+bd:
+user: hardness	
+pwd: h@rdness!web
+
+
+hardness:
+user: root
+pwd: @n@lis3
+
+
+usuario envio e-mail engepecas:
+usr: dti2@engepecas.com.br
+pwd: 4rfv%TGB
+
+
+hardness 
+http://192.168.0.239/paulo/hardness/
+1021613
+
+configuracao hardness:
+gerando um git clone:
+paulo@desenvolvimento paulo]$ git clone http://192.168.0.20/engepecas/hardness.git hardness2
+copia os arquivo conexao.php, conexao240.php, sessao.php.
+
+pasta: hardness/include
+$ cp conexao.php ../../hardness2/include
+$ cp conexao240.php ../../hardness2/include
+$ cp sessao.php ../../hardness2/include
+
+Não esquecer de ajustar o nome da pasta dentro do arquivo: sessao.php
+
+copiar pasta: hardness/empresas/E003/usuarios
+
+/srv/www/paulo/hardness/empresas/E003/usuarios
+
+para /srv/www/paulo/hardness2/empresas/E003
+
+[paulo@desenvolvimento E003]$ pwd
+/srv/www/paulo/hardness/empresas/E003
+[paulo@desenvolvimento E003]$ cp -r usuarios ../../../hardness2/empresas
+
+chown -R paulo:nginx hardness2 
+
+cd hardness2 
+
+chmod -R 777 empresas/E003/usuarios 
+http://192.168.0.239/paulo/hardness/nota_recebida/carregar_phii.php?T013_Id=1072392
+
+==============================================
+servidor desenvolvimento
+	ip: 192.168.0.240 
+	
+	srv/wwww
+
+	user: root
+	pwd: 4force*
+
+	BD: root
+	senha: <branco>
+
+	
+Configuracao postman:
+	
+BaseUrl = http://192.168.0.240:8000/api	
+token   = Bearer <token>	
+	
+	
+headers:
+-Content-Type = 	application/json
+-X-Requested-With = XMLHttpRequest
+
+API CONSUMO ADICIONAR ao Header:
+
+-Authorization = Bearer {{token}}
+
+body:
+
+    {
+        "email": "paulosergiobp@gmail.com",
+        "password": "280772"
+    }
+
+===============================================
+===============================================
+cielo
+https://cadastrosandbox.cieloecommerce.cielo.com.br/Home/Register
+
+
+merchantld: f616a44b-194c-4778-a402-fb6d131f4589
+merchantkey: ETCVJFNGPAVJNGCTXKXOZUHRDKXEWQFXNIVZTKUC
+
+=============================================================
+
+link desenvolvimento:
+http://192.168.0.239/paulo/hardness/principal/administracao.php3?Aberto=1
+
+
+gandima 3286-1727  / 3039-3192 
+
+autovidros verde: 3346-9700 whats: 99712-4829 
+
+
+vscode:
+Shift + Alt + F --> identação
+alt + shift + a --> comenta bloco de texto
+
+ctrl + k + ctrl +  c --> comenta linha
+ctrl + k + ctrl +  U --> descomenta linha
+
+
+
+api:
+
+Content-Type		=	application/json
+X-Requested-With	=	XMLHttpRequest
+Authorization		=	Bearer "token"
+
+
+
+infyom:
+
+Installing into existing Laravel Projects
+
+https://www.infyom.com/open-source/laravelgenerator/docs/7.0/installation
+
+
+
+1. adicione: composer.json.
+
+"require": {
+       "infyomlabs/laravel-generator": "7.0.x-dev",
+       "laravelcollective/html": "^6.1",
+       "infyomlabs/adminlte-templates": "^2.0"
+}
+
+"require": {
+       "doctrine/dbal": "~2.3"
+}
+
+execute: composer update
+--------------------------------------------------
+2. adicione: config/app.php
+
+
+'Form'      => Collective\Html\FormFacade::class,
+'Html'      => Collective\Html\HtmlFacade::class,
+'Flash'     => Laracasts\Flash\Flash::class,
+
+--------------------------------------------------
+3. execute php artisan infyom:publish
+
+--------------------------------------------------
+1.2.: Install Laravel UI
+
+execute:
+
+composer require laravel/ui:^2.0
+
+php artisan ui bootstrap --auth
+
+php artisan infyom.publish:layout
+
+php artisan infyom.publish:layout --localized
+
+
+1.3:  Supported API Params
+
+adicione: compsoer.json
+
+"repositories": [
+    {
+        "type": "vcs",
+        "url":  "git@github.com:InfyOmLabs/swaggervel.git"
+    }
+],
+"require": {
+    "appointer/swaggervel": "dev-master",
+    "infyomlabs/swagger-generator": "dev-master",
+},
+
+execute: 
+
+composer update
+
+php artisan vendor:publish --provider="Appointer\Swaggervel\SwaggervelServiceProvider"
+
+php artisan vendor:publish  --> opcao [0] todos
+
+Altere o parametro :    \code\api-integracao\config\infyom\laravel_generator.php
+
+
+    'add_on' => [
+
+        'swagger'       => true,
+
+        'tests'         => true,
+
+procedimento infyom:
+
+php artisan infyom:api Customer --fromTable --tableName=customer
+
+
+php artisan infyom:api ConfigDefaultLists --fromTable --tableName=config_default_lists
+
+deletar:
+C:\code\laravel>php artisan infyom:rollback configDefaultLists api
+
+==========================================
+localizar arquivos modificados
+==========================================
+
+--->acessar via powershell:
+
+PS Z:\> Dir Z:\hardness -r | ? {! $_.PSIsContainer -AND $_.lastwritetime -ge '03/23/21'}  > alt23032021
+
+
+====================================
+inventi
+====================================
+serviço:
+http://172.18.18.5/NfsePackMonitor/Sessao.aspx/Entrar
+
+usuario e senha :  nfsepackadm
+
+
+produto:
+http://172.18.18.5/NFePackMonitor/Login.aspx?ReturnUrl=%2fNFePackMonitor
+
+usuario e senha: nfepackadm
+
+
+
+
+-- CABECALHO DA NOTA - INVENTTI 
+SELECT
+  *
+FROM Nfe.INTERF_NFE
+WHERE 1 = 1
+AND NUM_DOCTO_FISCAL IN ( '127047')
+-- AND NUM_SERIE_DOCTO_FISCAL = '2'
+AND IND_STATUS_NFE = '31' -- 31 = NOTA RECEBIDA DE FORNECEDOR
+
+-- GERO UM INSERT DO CABECALHO ENCONTRADO ACIMA
+-- PEGO O VALOR DO CAMPO NUM_SEQ_NFE PARA FAZER A CONSULTA DAS DUAS CONSULTAS ABAIXO
+
+-- TABELA DE ICMS POR ITEM
+SELECT * FROM Nfe.INTERF_ICMS_NFE WHERE NUM_SEQ_ITEM_NFE IN ( SELECT NUM_SEQ_ITEM_NFE FROM Nfe.INTERF_ITEM_NFE WHERE NUM_SEQ_NFE = 0000000 )
+
+
+-- TABELA DE ITENS
+SELECT * FROM Nfe.INTERF_ITEM_NFE WHERE NUM_SEQ_NFE = 0000000
+
+
+====================================
+PENTAHO
+====================================
+--> O grande Problema para trabalhar com variavei nbo pentaho é seta o tipo: 
+
+--> Trabalhar com arquivo de configuracao XML e utilizacao de variaveis:
+	- https://www.youtube.com/watch?v=dPyeFje6v1E&t=113s
+	
+***	Set Variables:
+-- Varavel Scope type: 
+	-- Valid in the Java Virtual Machine: Seta a variavel para todas transformações do pentaho.
+	-- Valid in the parent job: seta apenas para quem vai consumir.
+	-- Valid in the grand-parent job: seta apenas para o pai que vai consumir.
+	-- valid in the root job: seta as variaveis apenas para a visao atual.
+
+
+=============================================================
+laravel
+=============================================================
+
+## ################################################################################################################
+#   Passos para criar o crud - INFYOM            
+## ################################################################################################################
+
+
+** termos de financeiro e contabil em ingles, bom para criarmos os campos no laradb https://www.sk.com.br/sk-fcj.html
+
+
+
+
+1. C:\code\api-integracao>php artisan make:migration create_nome_tabel_table --create=tabela_desejada
+						  php artisan make:migration create_config_default_lists --create=config_default_lists
+
+ou
+   C:\code\api-integracao>php artisan make:model MODELS\config_default_lists -m
+   
+	<trata informações migration>
+	
+	<gera migration>
+	php artisan  migrate (todos)
+	
+	
+	php artisan migrate --path="database/migrations/2014_10_12_000000_create_users_table.php" 
+
+	php artisan migrate --path="database/migrations/2021_11_09_162850_create_config_default_lists.php"   (uma tabela)
+	
+	rollback
+	C:\code\api-integracao>php artisan migrate:rollback --path="database/migrations/2021_11_09_162850_create_config_default_lists.php"
+	
+   
+2. C:\code\api-integracao>php artisan infyom:api ConfigDefaultLists --fromTable --tableName=config_default_lists  --primary=id 
+
+rollback
+php artisan infyom:rollback <classes> api
+C:\code\api-integracao>php artisan infyom:rollback ConfigDefaultLists api     
+
+3. MODEL:
+
+        a) $fillable --> Remove created_at ... (campos que vao ser inseridos)
+		--> $fillable: No eloquent ORM, o atributo $ fillable é um array contendo todos aqueles campos da tabela que podem ser preenchidos usando atribuição em massa. 
+		[Atribuição em massa refere-se ao envio de uma matriz para o modelo para criar diretamente um novo registro no Banco de Dados
+		--> O preenchimento é obrigatório no Laravel?
+		A instância de modelo inserida será retornada a você pelo método: ... 
+		No entanto, antes de usar o método de criação, você precisará especificar uma propriedade preenchível 
+		ou protegida em sua classe de modelo. 
+		Essas propriedades são necessárias porque todos os modelos do Eloquent são protegidos 
+		contra vulnerabilidades de atribuição em massa por padrão. 
+		
+		
+        b) adiciona $hidden --> campo que serão ocultados se precisar mostrar tem que retira deste parametro
+		-->  o atributo $ hidden é puramente para quando o modelo é convertido em uma matriz ou convertido em JSON, 
+		portanto, não deve afetar as inserções (ou qualquer outra coisa) 
+		
+		c) $cast --> deixa
+		--> A propriedade $ casts em seu modelo fornece um método conveniente de conversão de atributos em tipos de dados comuns. 
+		A propriedade $ casts deve ser uma matriz onde a chave é o nome do atributo sendo convertido, 
+		enquanto o valor é o tipo para o qual você deseja converter a coluna. 
+		
+		d) adiciona o searchcast
+		
+        d) $rules ---> copia para usar no Request\API\Create????APIRequest.php e UpdateApi
+		--> utilizado para validação e como na estruturado laravel utilizamos o repository o melhor lugar para a validação é no repositorio nao na model. (convenção)
+		
+		
+		e) adiciona o metodo:getFieldType(), este método é utilizado pela AppBaseController.php, para realizar as buscas e filtros na pesquisa. 
+            public static function getFieldType($field)
+            {
+                return isset(static::$searchCasts[$field])? static::$searchCasts[$field] : false;
+            }
+
+		
+4:Altera HTTP -> Request -> API -> Create????APIRequest.php
+		adiciona Rules e trata a informação.
+
+5: Altera HTTP -> Request -> API -> Update????APIRequest.php
+		adiciona Rules e trata a informação.
+
+6: Controller:
+    6.1: Ajuste pasta da classe criada:
+        namespace App\Http\Controllers\API\<Config>;
+
+    6.2:Realiza a tradução das classes do controller. 
+
+    6.3:Ajusta o metodo de consulta para atender:
+     *          name="limit",
+     *          description="Quantidade limite de exibição",
+     *          type="integer",
+     *          required=false,
+     *          in="query",
+     *          default="15"
+     *      ),
+     *      @SWG\Parameter(
+     *          name="page",
+     *          description="Página a ser exibida",
+     *          type="integer",
+     *          required=false,
+     *          in="query",
+     *          default="1"
+     *      ),
+     *      @SWG\Parameter(
+     *          name="order",
+     *          description="Ordenação do retorno",
+     *          type="string",
+     *          required=false,
+     *          in="query",
+     *          default="label"
+     *      ),
+     *      @SWG\Parameter(
+     *          name="direction",
+     *          description="Direção da ordenação do retorno",
+     *          type="string",
+     *          required=false,
+     *          in="query",
+     *          default="ASC"
+     *      ),
+     *      @SWG\Parameter(
+     *          name="fields",
+     *          description="Informe a seleção de campos que devem retornar da consulta separados por virgula",
+     *          type="string",
+     *          required=false,
+     *          in="query",
+     *          default="id, label"
+     *      ),
+     *      @SWG\Parameter(
+     *          name="search",
+     *          description="Pesquise por qualquer campo, ao usar este campo as outras consultas serão desconsideradas",
+     *          type="string",
+     *          required=false,
+     *          in="query",
+     *          default="Busca"
+     *      ),
+     *      @SWG\Parameter(
+     *          name="searchLike",
+     *          description="Pesquise por qualquer campo, busca incremental",
+     *          type="string",
+     *          required=false,
+     *          in="query",
+     *          default="Incremental"
+     *      ),
+
+
+## ################################################################################################################
+#  Orçamento
+## ################################################################################################################
+
+https://www.costex.com/
+login: u34195
+senha: ENGEPECAS
+
+
+https://ghtlink.hidrautorque.com.br/Account/Login?ReturnUrl=%2F
+login: compras3@engepecas.com.br
+senha: Enge2023
+
+
+http://www.itrservice.com.br/sisrev/login/login.php
+comprador: ricardo
+login: 888
+Senha: 5891
+
+https://ecommerce.usco.it/ecommerce/get
+login: 002033
+Senha: Enpeças2022
+
+########################################################################
+# adiconar JWT
+########################################################################
+
+composer require tymon/jwt-auth
+
+
+
+
+################################
+Envio de email laravel:
+
+usuario:  dti2@engepecas.com.br
+senha:  4rfv%TGB
+
+
+

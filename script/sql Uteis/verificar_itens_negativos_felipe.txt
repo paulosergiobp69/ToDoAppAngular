@@ -1,0 +1,30 @@
+SELECT D001_Codigo_Produto AS 'Código Produto', D024_Nome_Empresa AS 'Fornecedor', D300_D009_Id AS D009_Id, 
+D300_C004_Id AS Loja, D300_ON AS 'ON', D003_Nome_Linha
+FROM D300
+LEFT JOIN D049 ON D049_Id = D300_D049_Id
+LEFT JOIN D001 ON D001_Id = D049_D001_Id
+LEFT JOIN D024 ON D024_Id = D049_D024_Id
+LEFT JOIN D003 ON D003_Id = D001_D003_Id
+WHERE 1 = 1
+AND D300_ON < 0
+AND D001_C008_Id = 1
+-- AND D300_Flag_Nac_Imp = 'I'
+-- and D001.D001_Codigo_Produto = '25/221208'
+-- AND D003_Nome_Linha = 'JCB'
+-- AND D300_D009_Id=19350162
+-- GROUP BY D001_Codigo_Produto
+group by D049_Id, D300_C004_Id
+
+
+https://www.youtube.com/watch?v=3fNjgs1p42A
+
+
+17.116.258.209-00
+
+
+fusca renavam: 00510410073
+
+fornec: 147393
+
+
+php bin/magento setup:install --base-url=”http://localhost/magento" --db-host=”localhost” --db-name=”magento" --db-user=”root” --db-password=”” --admin-firstname=”admin” --admin-lastname=”admin” --admin-email=”user@example.com” --admin-user=”admin” --admin-password=”admin123" --use-rewrites=”1" --backend-frontname=”admin”

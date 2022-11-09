@@ -1,0 +1,71 @@
+http://192.168.0.239/paulo/hardness5/ajusta_saldo_phii.php?T013_Id=2113552
+
+select T086.* 
+from T860 
+inner join T013 on T013.T013_id = T860.T860_T013_Id
+INNER join  T086 on T086.T086_T013_Id = T013.T013_Id 
+-- inner join T014 on T014_T013_Id = T013.T013_Id 
+where T860_T013_Id = 2113552
+
+select T860_D009_Id, T860.T860_Id, D001.D001_Codigo_Produto, D001.D001_Descricao_Comercial, T860.T860_Quantidade 
+from T860 
+inner join D009 on D009_Id = T860.T860_D009_Id 
+inner join D049 on D049.D049_Id = D009.D009_D049_Id
+INNER JOIN D001 ON D001.D001_Id = D049.D049_D001_Id 
+where T860.T860_T013_Id  = 2113552
+order by D001.D001_Codigo_Produto 
+
+select * from T860 where T860.T860_Id = 529842
+
+delete from T860 where T860.T860_Id = 530062
+
+
+
+--  ------------------------- BD laradb
+
+
+
+
+-- busca oc para validar entrada
+select *
+from purchase_hist_orders pho 
+left join purchase_hist_incoming_invoices phii on phii.PHO_Id = pho.id
+where 1=1
+ and   pho.HRD_T011_Id = 1082092			
+and   pho.HRD_T012_D009_Id =   5146562 
+and   pho.HRD_T012_Id =  4729262
+
+--- busca se o item da nota foi recebido
+select * 
+from purchase_hist_incoming_invoices phii 
+where 1=1
+and   phii.HRD_T014_Id = 	8937922
+
+
+--- atualiza saldo apos correcao de lancamentos
+UPDATE purchase_hist_orders SET HRD_Saldo = HRD_T012_Quantidade-2
+where id = 984
+
+commit
+
+---------------------------------------- /// -------------------------------------
+-- ------------------------------- BD E003
+--  busca nota fiscal
+select T014_Id,T013.T013_T011_Id, T014_T012_Id, T014_D009_Id, T014_C004_Id, T014_Quantidade, T014_Valor_Custo_Unitario,
+		T014.T014_Codigo_Produto, T013.T013_Numero_Nota_Fiscal, T013.T013_Data_Entrada
+from T014 
+inner join T013 on T013_Id = T014.T014_T013_Id
+where 1=1
+and  T014_T012_Id =  4729262 	
+and  T014.T014_D009_Id = 11947442
+
+--  valida oc
+select T012.*
+from T011 
+inner join T012 on T012.T012_T011_Id = T011.T011_Id
+WHERE 1=1
+AND   T011.T011_Id = 1081012
+and   T012.T012_D009_Id = 12429382
+
+SELECT * FROM T012 WHERE T012_Id = 4728122
+
