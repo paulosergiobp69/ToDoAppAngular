@@ -1,0 +1,8 @@
+select * from clientes where clientes.clinome ilike '%TESTE INTEGRACAO INSERT%'
+
+select * from topics_kafka_customer_integration where identification_customer = 397683
+
+select * from wsprotheus_integracao_log 
+where integracao ilike '%cliente%'
+order by dt_inclusao desc
+limit 5;

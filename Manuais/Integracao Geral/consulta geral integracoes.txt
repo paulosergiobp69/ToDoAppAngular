@@ -1,0 +1,30 @@
+----- tudo que tinha que ir ja foi (fila)
+select id,content,status,return_protheus 
+from wsprotheus_bill_integration_protheus
+where status not in (200,406,403,412,501) OR status = NULL ORDER BY status desc
+
+SELECT * FROM billreceive_integration 
+WHERE 1=1
+and   id_protheus_request is null
+and   new_bills ilike ''
+
+-- tabela de end point  intranet
+select * from ws_protheus_log_go_live 
+where integracao ilike '%negociacao%' 
+and   obs ilike '%10112709%'
+order by dt_inclusao desc;
+    
+-- tabela de log full
+select * from wsprotheus_integracao_log order by dt_inclusao desc;
+
+-- tabela que guarda os que vão para a fila
+select * from billreceive_integration order by id_request desc; 
+
+-- tabela da fila 
+select * from wsprotheus_bill_integration_protheus order by data_insert desc;
+
+-- se nao tiver retorno da fila é pq deu erro, se perdeu e não foi
+select * from billreceive_integration WHERE id_protheus_request is null;
+
+
+

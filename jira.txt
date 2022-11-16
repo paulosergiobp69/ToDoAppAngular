@@ -1,0 +1,12 @@
+Gerenciamento De Projetos
+
+-- jira
+
+1. cria projeto 
+2. cria epicos
+3. cria itens nos epicos (historias) --> Backlog  (video: https://www.youtube.com/watch?v=D-ADdEAZEJ0)
+
+Backlog: Lista priorizada do que deve acontecer no desenvolvimento do projeto.
+	     Mantenha os itens mais relevantes e que devem ser desenvolvidos primeiro no topo da lista.
+
+-- Bitrix24 - bitrix24.com.br
